@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #box div{
+            border: 5px solid purple;
+        }
+
+        img {
+            height: 250px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div id="box">
+    <!-- <div>
+        <img src="images/1.jpg" alt="">
+        <img src="images/2.jpg" alt="">
+        <img src="images/3.jpg" alt="">
+    </div>
+    <div>
+        <img src="images/1.jpg" alt="">
+        <img src="images/2.jpg" alt="">
+        <img src="images/3.jpg" alt="">
+
+    </div>
+    <div>
+        <img src="images/1.jpg" alt="">
+        <img src="images/2.jpg" alt="">
+        <img src="images/3.jpg" alt="">
+
+    </div> -->
+    </div>
+
+    <script>
+
+        let myDiv = +prompt("sol'ko?");
+        let myPic = +prompt("skol'ko pic?");
+
+        let s = "";
+        
+        for (i=1; i<=myDiv; i++) {
+            let n = 1;
+            s += "<div>";
+
+                for (k=1; k<=myPic; k++){
+                    if(n>11) n = 1;
+                    s += `<img src="images/${n++}.jpg" alt="">`;
+                }
+
+            s += "</div>"    
+
+        }
+
+
+
+        box.innerHTML = s;
+
+
+
+
+    </script>
+
+
+
+
+    
+</body>
+</html>
